@@ -36,6 +36,17 @@ body{
         background-size: cover;
     }
   }
+ /* For medium-sized mobile phones (481px to 767px) */
+@media screen and (min-width: 481px) and (max-width: 575px) {
+  .img-fluid{
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+}
+
+
 /* HERO IMAGE END */
 
 /* HERO HEADING */
@@ -60,6 +71,7 @@ body{
     text-shadow: 0 0 10px rgba(255, 215, 0, 0.8), 0 0 20px rgba(255, 215, 0, 0.6), 0 0 30px rgba(255, 215, 0, 0.4);
    
 }
+
 
 @media screen and (min-width: 576px) {
     .hero-heading {
@@ -105,7 +117,18 @@ body{
         text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
   }
   }
-
+  @media screen and (min-width: 481px) and (max-width: 575px) {
+    .hero-heading {
+      font-size: 51px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+  }
+  
 /* HERO HEADING ENDS */
 
 /* NAVBAR */
@@ -250,6 +273,30 @@ hero-btn {
     }
 
 }
+@media screen and (min-width: 481px) and (max-width: 575px) {
+  .hero-btn {
+    position: absolute;
+    left: 26%;
+    top: 87%;
+    transform: translate();
+    background-color: transparent; /* Add the missing semicolon here */
+    backdrop-filter: blur(10px);
+    font-size: 25px;
+    border: 2px solid white; /* Optional: Add a border to make the button more visible */
+    color: white; /* Optional: Set text color to white */
+    padding: 10px 20px; /* Optional: Add some padding for better appearance */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    cursor: pointer; /* Optional: Change cursor to pointer on hover */
+    transition: background-color 0.3s, color 0.3s; /* Optional: Add transition effects */
+  
+}
+
+.hero-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Optional: Change background color on hover */
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.8), 0 0 20px rgba(255, 215, 0, 0.6), 0 0 30px rgba(255, 215, 0, 0.4);
+}
+
+}
 /* AUDIO */
 /* Volume Button Style */
 .audio-controls {
@@ -306,6 +353,12 @@ hero-btn {
     .news-bulletin{
      font-size: 54px;
     }
+}
+@media screen and (min-width: 481px) and (max-width: 575px) {
+  .news-bulletin{
+    font-size: 34px;
+   }
+
 }
 
 /* MARQUEE ENDS */
@@ -399,6 +452,27 @@ hero-btn {
       height: 100%;
     }
   }
+  @media screen and (min-width: 481px) and (max-width: 575px) {
+  
+    .list-item h1 {
+  
+      font-size: 30px; 
+    }
+    .list-no {
+      font-size: 20px; 
+      font-weight: bold;
+      display: block;
+     
+    }
+    .list-item h1 span {
+      font-size: 45px; 
+    }
+    .hogwart-video{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  
  
  /* BOOKS */
  
@@ -625,6 +699,59 @@ hero-btn {
 
   .slider-img.active {
     width: 650px !important;
+    height: auto !important;
+  }
+
+  .slider-container h1 {
+    font-size: 22px;
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%) rotate(0deg);
+    text-align: center;
+    width: 80%;
+  }
+
+  .details p {
+    font-size: 18px;
+    line-height: 26px;
+    width: 85%;
+  }
+
+  .slider-container button {
+    font-size: 22px;
+    padding: 6px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 575px) {
+  
+  .slider-container {
+    width: 100%;
+    height: auto;
+    margin-bottom: 8%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .slide-h {
+    font-size: 35px;
+    margin-top: 4%;
+    margin-bottom: 5%;
+  }
+
+  .slider-images {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .slider-img {
+    width: 355px;
+    height: auto;
+  }
+
+  .slider-img.active {
+    width: 455px !important;
     height: auto !important;
   }
 
@@ -1127,6 +1254,12 @@ hero-btn {
   text-shadow: 0 0 10px rgba(255, 215, 0, 0.8), 0 0 20px rgba(255, 215, 0, 0.6), 0 0 30px rgba(255, 215, 0, 0.4);
 
 }
+@media screen and (min-width: 481px) and (max-width: 575px) {
+  .join-info h1{
+    font-size: 45px;
+  }
+}
+
 
 
 /* FOOTER */
