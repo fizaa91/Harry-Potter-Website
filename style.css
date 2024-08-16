@@ -4,6 +4,13 @@
     margin: 0;
     box-sizing: border-box;
 }
+@media screen and (max-width:480px) {
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+}
 body{
     background-color: black;
     font-family: 'MedievalSharp' , 'sans-serif';
@@ -47,7 +54,7 @@ body{
 }
 @media screen and (max-width: 480px) {
   .img-fluid{
-    width: 100%;
+    width: 110%;
     height: 100vh;
     background-position: center;
     background-size: cover;
@@ -137,7 +144,7 @@ body{
   }
   @media screen and (max-width: 480px) {
     .hero-heading {
-      font-size: 50px;
+      font-size: 35px;
       position: absolute;
       top: 50%;
       left: 50%;
@@ -318,11 +325,11 @@ hero-btn {
   .hero-btn {
     position: absolute;
     left: 26%;
-    top: 87%;
+    top: 85%;
     transform: translate();
     background-color: transparent; /* Add the missing semicolon here */
     backdrop-filter: blur(10px);
-    font-size: 25px;
+    font-size: 20px;
     border: 2px solid white; /* Optional: Add a border to make the button more visible */
     color: white; /* Optional: Set text color to white */
     padding: 10px 20px; /* Optional: Add some padding for better appearance */
@@ -522,6 +529,8 @@ hero-btn {
     .list-item h1 {
   
       font-size: 30px; 
+      position: relative;
+      right: 20%;
     }
     .list-no {
       font-size: 20px; 
@@ -530,7 +539,7 @@ hero-btn {
      
     }
     .list-item h1 span {
-      font-size: 45px; 
+      font-size: 35px; 
     }
     .hogwart-video{
       width: 100%;
@@ -863,12 +872,12 @@ hero-btn {
   }
 
   .slider-img {
-    width: 355px;
+    width: 255px;
     height: auto;
   }
 
   .slider-img.active {
-    width: 455px !important;
+    width: 355px !important;
     height: auto !important;
   }
 
@@ -1172,6 +1181,28 @@ hero-btn {
       font-size: 50px;
   }
 }
+@media screen and (max-width: 480px) {
+ .slide-h{
+  margin-bottom: 10%;
+ }
+ .slider .list .item .content .title{
+  font-size: 3em;
+  font-weight: bold;
+  line-height: 1.0em;
+}
+.slider .list .item .content .type{
+font-size: 2em;
+font-weight: bold;
+line-height: 1.3em;
+}
+.description{
+  display: none;
+}
+ .button button{
+  position: relative;
+   top: 20vh;
+}
+}
 
 
 /* CHARACTERS */
@@ -1381,6 +1412,7 @@ hero-btn {
   .join-info h1{
     font-size: 45px;
   }
+  
 }
 
 
